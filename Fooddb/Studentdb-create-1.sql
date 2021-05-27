@@ -27,7 +27,7 @@ Name	 		varchar(100)		not null unique
 Create table Menu (
 ID 			integer 			primary key auto_increment,
 Name	 	varchar(75) 		not null,
-Categoryid 	varchar(255) 		not null,
+Categoryid 	integer			 	not null,
 price		decimal(10,2)		not null,
 calories	integer				not null,
 
@@ -39,13 +39,13 @@ CONSTRAINT uMenuItem unique (categoryid, name)
 
 Create table ticket (
 ID 				 integer 				primary key auto_increment,
-Customerid 		 varchar(255)			not null,
+Customerid 		 integer				not null,
 orderdate		 timestamp				not null,
 status			 varchar(1)				not null,
 Total			 decimal(10,2)			not null,
 
 foreign key (customerid) references customer(id),
-CONSTRAINT cust_dt unique (customerid, date)
+CONSTRAINT cust_dt unique (customerid, orderdate)
 
 
 
