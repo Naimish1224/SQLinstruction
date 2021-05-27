@@ -40,7 +40,11 @@ CONSTRAINT act_mov unique (ActorID, MovieID)
 -- Add some movies
  insert into Movie VALUES
  	(1, 'Revenge of the Nerds', 1984, 'R', 'Jeff Kanew'),
- 	(2, 'Avengers Infinity War', 2018, 'PG-13', 'Anthony Russo, John Russo');
+ 	(2, 'Avengers Infinity War', 2018, 'PG-13', 'Anthony Russo, John Russo'),
+    (3, 'Gladiator', 2000, 'R', 'Ridley Scott'),
+    (4, 'The Terminator', 1984, 'R', 'James Cameron'),
+    (5, '300', 2006, 'R', 'Zach Snyder');
+    
     
 -- Add some actors
  insert into Actor VALUES
@@ -48,15 +52,41 @@ CONSTRAINT act_mov unique (ActorID, MovieID)
  	(2, 'Chris', 'Hemsworth', 'M', '1983-09-11'),
     (3, 'Scarlett', 'Johansson', 'F', '1984-11-22'),
  	(4, 'Robert', 'Carradine', 'M', '1954-3-24'),
- 	(5, 'Anthony', 'Edwards', 'M', '1962-7-19');
+ 	(5, 'Anthony', 'Edwards', 'M', '1962-7-19'),
+    (6, 'Russell', 'Crowe', 'M', '1964-4-7'),
+    (7, 'Arnold', 'Schwarzenegger', 'M', '1947-7-30'),
+    (8, 'Michael', 'Biehn', 'M', '1956-7-30'),
+    (9, 'Connie', 'Nelson', 'F', '1965-7-3'),
+    (10, 'Gerard', 'Butler', 'M', '1969-11-13'),
+    (11, 'David', 'Wenham', 'M', '1965-9-21');
     
--- Add movie credits for actors
+    
+    -- Add movie credits for actors
  insert into Credit (ActorID, MovieID, Role) VALUES
- 	(1, 2, 'Tony Stark - Iron Man'),
+ 
+ 	(1, 2, 'Iron Man'),
     (2, 2, 'Thor'),
     (3, 2, 'Natasha Romanoff - Black Widow'),
     (4, 1, 'Lewis'),
-    (5, 1, 'Gilbert');
+    (5, 1, 'Gilbert'),
+    (7, 4, 'Terminator'),
+    (6, 3, 'Maximus'),
+    (8, 4, 'Kyle Reese'),
+    (9, 3, 'Lucilla'),
+    (10, 5, 'King Leonidas'),
+    (11, 5, 'Dilios');
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
 
 
 -- create a user and grant privileges to that user
