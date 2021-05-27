@@ -26,8 +26,8 @@ Name	 		varchar(100)		not null unique
 
 Create table Menu (
 ID 			integer 			primary key auto_increment,
-Name	 	varchar(75) 		not null,
-Categoryid 	integer			 	not null,
+Categoryid 	integer		 		not null,
+name 		varchar(255)		not null,
 price		decimal(10,2)		not null,
 calories	integer				not null,
 
@@ -40,9 +40,9 @@ CONSTRAINT uMenuItem unique (categoryid, name)
 Create table ticket (
 ID 				 integer 				primary key auto_increment,
 Customerid 		 integer				not null,
-orderdate		 timestamp				not null,
-status			 varchar(1)				not null,
-Total			 decimal(10,2)			not null,
+orderdate		 timestamp				not null default current_timestamp,
+status			 varchar(1)				not null default 'O',
+Total			 decimal(10,2)			not null default '0',
 
 foreign key (customerid) references customer(id),
 CONSTRAINT cust_dt unique (customerid, orderdate)
@@ -56,7 +56,7 @@ ID 				 integer 			primary key auto_increment,
 Ticketid 		 integer			not null,
 Menuid			 integer			not null,
 Quantity		 varchar(255)		not null,
-Total			 decimal			not null,
+Total			 decimal			not null default '0',
 
     
     Foreign Key (TicketID) references ticket(ID),
@@ -72,6 +72,38 @@ insert into Category (Name) Values
 	('Sides'),
 	('Drinks'),
 	('Desserts');
+    
+    insert into Menu Values
+	(1, 1, 'Cheese Sticks', 8.99, 800),
+	(2, 1, 'Fried Pickles', 5.99, 600),
+    (3, 1, 'Bread Sticks', 7.99, 850),
+    (4, 1, 'Patato Skins', 11.99, 1200),
+    (5, 1, 'Nachos', 11.99, 1200),
+    (6, 2, 'House Salad', 4.99, 400),
+    (7, 2, 'Ceasar Salad', 6.99, 600),
+    (8, 3, 'Filet Mignon', 28.99, 1100),
+    (9, 1, 'Pizza', 13.99, 1400);
+    
+    insert into Customer Values   
+    (1, 'NP101', 'Nick', 'Patel', 'np@gmail.com', '513-405-8070');
+    
+    
+    insert into Ticket (id, customerid) values 
+    (1, 1);
+    
+    insert into lineitem (ticketid, menuid, quantity) values
+    (1, 9, 2),
+    (1, 4, 2),
+    (1, 7, 1);
+    
+
+    
+    
+    
+    
+    
+    
+    
     
     DROP USER IF EXISTS fooddb_user@localhost;
     Create User fooddb_user@localhost identified by 'sesame';
