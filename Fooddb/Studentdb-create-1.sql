@@ -65,3 +65,18 @@ CONSTRAINT tkt_mid unique (ticketID, MenuID)
 
 );
 
+insert into Category (Name) Values
+	('Appetizers'),
+	('Salad'),
+	('Entrees'),
+	('Sides'),
+	('Drinks'),
+	('Desserts');
+    
+    DROP USER IF EXISTS fooddb_user@localhost;
+    Create User fooddb_user@localhost identified by 'sesame';
+    grant select, insert, delete, update on fooddb.* to fooddb_user@localhost;
+    
+
+
+
