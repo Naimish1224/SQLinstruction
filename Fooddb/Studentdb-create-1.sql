@@ -82,19 +82,48 @@ insert into Category (Name) Values
     (6, 2, 'House Salad', 4.99, 400),
     (7, 2, 'Ceasar Salad', 6.99, 600),
     (8, 3, 'Filet Mignon', 28.99, 1100),
-    (9, 1, 'Pizza', 13.99, 1400);
+    (9, 1, 'Pizza', 13.99, 1400),
+    (10, 4, 'Garlic Bread', 5.99, 500),
+    (11, 6, 'Cheese Cake', 9.99, 1200),
+    (12, 6, 'Smores', 8.99, 1400),
+    (13, 6, 'Ice Cream', 6.99, 800),
+    (14, 5, 'Margarita', 7.00, 200),
+    (15, 5, 'Beer', 5.99, 150),
+    (16, 5, 'Sangria', 10.99, 200),
+    (17, 5, 'Wine', 7.99, 100),
+    (18, 3, 'Pasta', 10.50, 550),
+    (19, 3, 'Enchiladas', 11.99, 900),
+    (20, 5, 'Water', 0.00, 0),
+    (21, 4, 'Mac and cheese', 4.00, 150);
     
     insert into Customer Values   
-    (1, 'NP101', 'Nick', 'Patel', 'np@gmail.com', '513-405-8070');
+    (1, 'NP101', 'Nick', 'Patel', 'np@gmail.com', '513-405-8070'),
+    (2, 'MP101', 'Mansi', 'Patel', 'mp@gmail.com', '513-448-9588'),
+    (3, 'GP101', 'Gunvant', 'Patel', 'gp@gmail.com', '937-763-1421'),
+    (4, 'AP101', 'Anjana', 'Patel', 'ap@gmail.com', '513-554-0195'),
+    (5, 'HP101', 'Maahi', 'Patel', 'mp2@gmail.com', '513-405-8071');
     
     
     insert into Ticket (id, customerid) values 
-    (1, 1);
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 4),
+    (5, 5);
     
     insert into lineitem (ticketid, menuid, quantity) values
     (1, 9, 2),
     (1, 4, 2),
-    (1, 7, 1);
+    (1, 5, 1),
+    (2, 3, 1),
+    (2, 1, 4),
+    (2, 6, 3),
+    (3, 8, 1),
+    (4, 2, 4),
+    (4, 5, 1),
+    (5, 8, 1),
+    (5, 2, 3),
+    (5, 5, 5);
     
 
     
