@@ -16,7 +16,7 @@ Phone	 		varchar(12) 		not null
 
 Create table Category (
 ID 				integer 			primary key auto_increment,
-Name	 		varchar(100)		not null unique
+Catname	 		varchar(100)		not null unique
 
 
 
@@ -27,12 +27,12 @@ Name	 		varchar(100)		not null unique
 Create table Menu (
 ID 			integer 			primary key auto_increment,
 Categoryid 	integer		 		not null,
-name 		varchar(255)		not null,
+menuname 		varchar(255)		not null,
 price		decimal(10,2)		not null,
 calories	integer				not null,
 
 foreign key (categoryid) references category(id),
-CONSTRAINT uMenuItem unique (categoryid, name)
+CONSTRAINT uMenuItem unique (categoryid, menuname)
 );
 
 
@@ -59,13 +59,13 @@ Quantity		 varchar(255)		not null,
 Total			 decimal			not null default '0',
 
     
-    Foreign Key (TicketID) references ticket(ID),
+Foreign Key (TicketID) references ticket(ID),
 Foreign Key (MenuID) references menu(ID),
 CONSTRAINT tkt_mid unique (ticketID, MenuID)
 
 );
 
-insert into Category (Name) Values
+insert into Category (catName) Values
 	('Appetizers'),
 	('Salad'),
 	('Entrees'),
@@ -127,41 +127,7 @@ insert into Category (Name) Values
     
     -- upate the total with update query
 
-update lineitem
-set total = 27.98 where id = 1;
 
-update lineitem
-set total = 23.92 where id = 2;
-
-update lineitem
-set total = 11.99 where id = 3;
-
-update lineitem
-set total = 7.99 where id = 4;
-
-update lineitem
-set total = 35.96 where id = 5;
-
-update lineitem
-set total = 14.97 where id = 6;
-
-update lineitem
-set total = 28.99 where id = 7;
-
-update lineitem
-set total = 23.96 where id = 8;
-
-update lineitem
-set total = 11.99 where id = 9;
-
-update lineitem
-set total = 28.99 where id = 10;
-
-update lineitem
-set total = 23.96 where id = 11;
-
-update lineitem
-set total = 59.95 where id = 12;
 
     
 
@@ -177,6 +143,7 @@ set total = 59.95 where id = 12;
     Create User fooddb_user@localhost identified by 'sesame';
     grant select, insert, delete, update on fooddb.* to fooddb_user@localhost;
     
+
 
 
 
