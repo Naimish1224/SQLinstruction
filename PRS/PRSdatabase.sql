@@ -66,8 +66,16 @@ foreign key (RequestId) references Request(Id));
 
 Select * from user;
 insert into User Values
-(1, 'NP101', 11111, 'Nick', 'Patel', '5134058070', 'NP@Gmail.com', 0, 0),
-(2, 'MP101', 22222, 'Mansi', 'Patel', '5134489588', 'MP@Gmail.com', 0, 0);
+(1, 'NP101', 11111, 'Nick', 'Patel', '513-405-8070', 'NP@Gmail.com', 0, 1),
+(2, 'MP101', 22222, 'Mansi', 'Patel', '513-448-9588', 'MP@Gmail.com', 0, 1),
+(3, 'GP101', 33333, 'Gunvant', 'Patel', '937-763-1421', 'GP@Gmail.com', 1, 0),
+(4, 'AP101', 44444, 'Anjana', 'Patel', '513-445-9588', 'AP@Gmail.com', 1, 0),
+(5, 'MP201', 55555, 'Mukti', 'Patel', '513-503-2311', 'MP1@Gmail.com', 1, 0),
+(6, 'YP101', 66666, 'Yajendra', 'Zala', '513-707-9588', 'YZ@Gmail.com', 1, 0),
+(7, 'AS101', 77777, 'Anjali', 'Shah', '513-201-0088', 'AS@Gmail.com', 1, 0),
+(8, 'HS101', 88888, 'Hiten', 'Shah', '513-405-9181', 'HS@Gmail.com', 0, 1),
+(9, 'JP101', 99999, 'Jay', 'Patel', '513-555-6018', 'JP@Gmail.com', 1, 0),
+(10, 'MP301', 12121, 'Maulik', 'Patel', '513-885-2016', 'MP2@Gmail.com', 1, 0);
 
 select * from vendor;
 insert into Vendor Values
@@ -90,6 +98,15 @@ insert into Product Values
 (10, 4, 'IM12M9520', 'Laptop Acer Acer™ Aspire One Cloudbook 14\"', 224.99, NULL, NULL),
 (11, 4, '940600', 'Canon imageCLASS Copier (D530)', 99.99, NULL, NULL),
 (12, 5, '228148', 'Acer Aspire ATC-780A-UR12 Desktop Computer', 399.99, NULL, NULL),
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL),
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
+(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
 (13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL);
 
 
