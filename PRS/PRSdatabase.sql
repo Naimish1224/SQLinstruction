@@ -98,16 +98,17 @@ insert into Product Values
 (10, 4, 'IM12M9520', 'Laptop Acer Acer™ Aspire One Cloudbook 14\"', 224.99, NULL, NULL),
 (11, 4, '940600', 'Canon imageCLASS Copier (D530)', 99.99, NULL, NULL),
 (12, 5, '228148', 'Acer Aspire ATC-780A-UR12 Desktop Computer', 399.99, NULL, NULL),
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL),
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL)
-(13, 5, '279364', 'Lenovo IdeaCentre All-In-One Desktop',349.99, NULL, NULL);
+(13, 5, '289771', 'IPhone 11', 699.99, NULL, NULL),
+(14, 2, '291173', 'Macbook Pro', 1050.99, NULL, NULL),
+(15, 2, '322765', 'Apple Wireless Mouse', 129.99, NULL, NULL),
+(16, 1, '279364', 'Anker Powerline+ II Lightning Cable ', 11.99, NULL, NULL),
+(17, 1, '876776', 'Anker Docking Station, PowerExpand 13-in-1 USB-C Dock', 129.59, NULL, NULL),
+(18, 1, '876676', 'Anker 4-in-1 Wireless Charging Station', 74.99, NULL, NULL),
+(19, 5, '200123', 'Fitbit Charge 4 Fitness and Activity Tracker with Built-in GPS', 99.95, NULL, NULL),
+(20, 4, '267622', 'Fire TV Stick Lite with Alexa Voice Remote Lite', 24.99, NULL, NULL),
+(21, 3, '567M23', 'iBayam Journal Planner Pens Colored Pens Fine Point Markers', 6.78, NULL, NULL),
+(22, 5, '6544S1', 'NexiGo Upgraded PS5 Controller Charger with Thumb Grip Kit', 25.49, '2 pack', NULL),
+(23, 5, '4322MM', 'Security Camera for Home Indoor', 25.49, NULL, NULL);
 
 
 
