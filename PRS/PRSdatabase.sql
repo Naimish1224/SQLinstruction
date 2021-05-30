@@ -108,6 +108,7 @@ insert into Product Values
 (20, 4, '267622', 'Fire TV Stick Lite with Alexa Voice Remote Lite', 24.99, NULL, NULL),
 (21, 3, '567M23', 'iBayam Journal Planner Pens Colored Pens Fine Point Markers', 6.78, NULL, NULL),
 (22, 5, '6544S1', 'NexiGo Upgraded PS5 Controller Charger with Thumb Grip Kit', 25.49, '2 pack', NULL),
+(24, 3, '434421', 'Iphone X 164GB', 1099.00, 'White', NULL),
 (23, 5, '4322MM', 'Security Camera for Home Indoor', 25.49, NULL, NULL);
 
 
