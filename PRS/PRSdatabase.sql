@@ -75,7 +75,8 @@ insert into User Values
 (7, 'AS101', 77777, 'Anjali', 'Shah', '513-201-0088', 'AS@Gmail.com', 1, 0),
 (8, 'HS101', 88888, 'Hiten', 'Shah', '513-405-9181', 'HS@Gmail.com', 0, 1),
 (9, 'JP101', 99999, 'Jay', 'Patel', '513-555-6018', 'JP@Gmail.com', 1, 0),
-(10, 'MP301', 12121, 'Maulik', 'Patel', '513-885-2016', 'MP2@Gmail.com', 1, 0);
+(10, 'MP301', 12121, 'Maulik', 'Patel', '513-885-2016', 'MP2@Gmail.com', 1, 0),
+(11, 'HS201', 12221, 'Hemant', 'Shah', '631-747-7565' 'HS@Gmail.com', 1, 0);
 
 select * from vendor;
 insert into Vendor Values
