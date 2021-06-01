@@ -4,6 +4,12 @@ CREATE DATABASE PRSdb;
 USE PRSdb;
 
 
+CREATE TABLE Login (
+Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+username                VARCHAR(50) NOT NULL UNIQUE,
+password                VARCHAR(255) NOT NULL,
+created_at              DATETIME DEFAULT CURRENT_TIMESTAMP);
+
 Create table User (
 ID 						integer 			primary key auto_increment,
 Username 				varchar(20) 		not null unique,
@@ -76,7 +82,8 @@ insert into User Values
 (7, 'AS101', 77777, 'Anjali', 'Shah', '513-201-0088', 'AS@Gmail.com', 1, 0),
 (8, 'HS101', 88888, 'Hiten', 'Shah', '513-405-9181', 'HS@Gmail.com', 0, 1),
 (9, 'JP101', 99999, 'Jay', 'Patel', '513-555-6018', 'JP@Gmail.com', 1, 0),
-(10, 'MP301', 12121, 'Maulik', 'Patel', '513-885-2016', 'MP2@Gmail.com', 1, 0);
+(10, 'MP301', 12121, 'Maulik', 'Patel', '513-885-2016', 'MP2@Gmail.com', 1, 0),
+(11, 'HS201', 12221, 'Hemant', 'Shah', '631-747-7565' 'HS@Gmail.com', 1, 0);
 
 select * from vendor;
 insert into Vendor Values
@@ -109,6 +116,7 @@ insert into Product Values
 (20, 4, '267622', 'Fire TV Stick Lite with Alexa Voice Remote Lite', 24.99, NULL, NULL),
 (21, 3, '567M23', 'iBayam Journal Planner Pens Colored Pens Fine Point Markers', 6.78, NULL, NULL),
 (22, 5, '6544S1', 'NexiGo Upgraded PS5 Controller Charger with Thumb Grip Kit', 25.49, '2 pack', NULL),
+(24, 3, '434421', 'Iphone X 164GB', 1099.00, 'White', NULL),
 (23, 5, '4322MM', 'Security Camera for Home Indoor', 25.49, NULL, NULL);
 
 
