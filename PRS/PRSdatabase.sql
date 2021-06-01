@@ -42,6 +42,7 @@ foreign key (UserID) references User(id));
 
 
 
+
 Create table Product (
 ID 						integer 			primary key auto_increment,
 VendorID 				integer 			not null,
@@ -113,9 +114,7 @@ insert into Product Values
 
 
 
-
-    
-    DROP USER IF EXISTS prs_user@localhost;
+	DROP USER IF EXISTS prs_user@localhost;
     Create User prs_user@localhost identified by 'sesame';
     grant select, insert, delete, update on Prsdb.* to prs_user@localhost;
 
