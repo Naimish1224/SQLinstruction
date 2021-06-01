@@ -10,17 +10,11 @@ Customerno 		varchar(5) 			not null unique,
 lastName 		varchar(255)		not null,
 firstName 		varchar(255) 		not null,
 Email		 	varchar(75) 		not null,
-Phone	 		varchar(12) 		not null
-)
-;
+Phone	 		varchar(12) 		not null);
 
 Create table Category (
 ID 				integer 			primary key auto_increment,
-Catname	 		varchar(100)		not null unique
-
-
-
-);
+Catname	 		varchar(100)		not null unique);
 
 
 
@@ -45,11 +39,7 @@ status			 varchar(1)				not null default 'O',
 Total			 decimal(10,2)			not null default '0',
 
 foreign key (customerid) references customer(id),
-CONSTRAINT cust_dt unique (customerid, orderdate)
-
-
-
-);
+CONSTRAINT cust_dt unique (customerid, orderdate));
 
 create table lineItem (
 ID 				 integer 			primary key auto_increment,
