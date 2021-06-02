@@ -31,13 +31,12 @@ join Instructor on InstructorId = Instructor.Id;
 
 --outer join report all student, class enrollment includ student with no class enrolled
 
-select subject, student.firstname, student.lastname, code, MajorId from StudentClass
-left join student on studentid = student.id
-join class on classid = class.id;
+select student.firstname, student.lastname, ClassId from Student
+left outer join studentclass on StudentId = student.id;
 
 
 
-select * from Student;
+select * from StudentClass;
 
 
 

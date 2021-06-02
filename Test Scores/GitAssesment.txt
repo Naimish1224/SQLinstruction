@@ -1,0 +1,34 @@
+Git/GitHub Assessment
+1) (CORRECT) BONUS: It is recommended that the c:\repos folder be made a git repository? TRUE or FALSEPoints: 10 of 10
+True
+False
+
+2) (CORRECT) What is GitHub.com?Points: 20 of 20
+A web-based application that replaces the local version of Git.
+The location where Git can be downloaded from.
+A free, web-based repository that integrates very well with Git.
+None of the above
+
+3) (CORRECT) Which Git command is used to link a Git repository to a GitHub repository?Points: 20 of 20
+git remote connect link https://github.com/student/new-repo.git
+git connect remote https://github.com/student/new-repo.git
+git remote add origin https://github.com/student/new-repo.git
+None of the above
+
+4) (CORRECT) What is the format of the Git command to copy the local repository changes to the remote repository?Points: 20 of 20
+git push origin master
+git copy local remote
+git sync local remote
+None of the above
+
+5) (CORRECT) Which Git command causes files to be actually stored in the repository?Points: 20 of 20
+git store -n "some message text"
+git commit -m "some message text"
+git check-in commits all
+None of the above
+
+6) (CORRECT) What Git command creates a new repository in the current directory on disk?Points: 20 of 20
+git make repo
+git create
+git init
+None of the above
